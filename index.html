@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RGB</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Teste</h1>
+        <div id="vermelho">
+          <label for="redColor">Red</label>
+          <input
+            onclick="newValue()"
+            type="range"
+            id="redColor"
+            name="redColor"
+            min="0"
+            max="255"
+          />
+          <input type="number" id="redNumber" class="modifyInput" disabled />
+        </div>
+        <div id="verde">
+          <label for="greenColor">Green</label>
+          <input
+            onclick="newValue()"
+            type="range"
+            id="greenColor"
+            name="greenColor"
+            min="0"
+            max="255"
+          />
+          <input type="number" id="greenNumber" class="modifyInput" disabled />
+        </div>
+        <div id="azul">
+          <label for="blueColor">Blue</label>
+          <input
+            onclick="newValue()"
+            type="range"
+            id="blueColor"
+            name="blueColor"
+            min="0"
+            max="255"
+          />
+          <input type="number" id="blueNumber" class="modifyInput" disabled />
+        </div>
+      </div>
+      <div id="finalColor"></div>
+      <p id="hexaColor"></p>
+    </main>
+    <footer>
+      <p>Project by Rafael Maito</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
